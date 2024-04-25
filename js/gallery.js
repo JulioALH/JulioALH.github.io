@@ -9,8 +9,9 @@ function upDate(previewPic){
     to the alt text of the preview image 
     */
     x=document.getElementById("image");
+    x.style.backgroundImage = "url('" + previewPic.src + "')";
     x.innerHTML = previewPic.alt;
-	}
+}
 
 function unDo(){
     /* In this function you should 
@@ -20,5 +21,5 @@ function unDo(){
     2) Change the text  of the div with the id = "image" 
     back to the original text.  You can use the html code to see what that original text was
     */
-		
-	}
+    
+}
