@@ -8,6 +8,9 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     to the alt text of the preview image 
     */
+    console.log("upDate event triggered");
+    console.log(previewPic.alt);
+    console.log(previewPic.src);
     x=document.getElementById("image");
     x.style.backgroundImage = "url('" + previewPic.src + "')";
     x.innerHTML = previewPic.alt;
@@ -23,5 +26,6 @@ function unDo(){
     */
     x=document.getElementById("image");
     x.style.backgroundImage = "url('')";
-    x.innerHTML = "Hover over an image below to display here.";    
+    x.innerHTML = "Hover over an image below to display here.";
+    console.log("unDo event triggered");
 }
