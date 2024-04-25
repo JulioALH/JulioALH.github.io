@@ -6,7 +6,7 @@ body{
 }
 #image{
     line-height:500px;
-    width: 400%;
+    width: 400px;
     height: 450px;
     border:5px solid black;
     margin:0 auto;
