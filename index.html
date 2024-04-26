@@ -5,25 +5,21 @@
 	<title>Photo Gallery</title>
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<script src="js/gallery.js"></script>
 </head>
 <body>
 	
-	<div id = "image">
+	<div id="image">
 		Hover over an image below to display here.
 	</div>
-	
-	<img class = "preview" alt = "Butt on the pillow!" src = "images/almohada.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "Lying belly up" src = "images/panza.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "My face!" src = "images/carita.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
-	<img class = "preview" alt = "Sleeping with my grandma" src = "images/comodoAbue.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-	<img class = "preview" alt = "In my second bed with my blue vest" src = "images/cama2chaleAzul.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-	<img class = "preview" alt = "Standing on my bed" src = "images/paradoCama.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
+	<div id="allImages">
+		<img class="preview" alt="Butt on the pillow!" src="images/almohada.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+		<img class="preview" alt="Lying belly up" src="images/panza.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+		<img class="preview" alt="My face!" src="images/carita.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+		<img class="preview" alt="Sleeping with my grandma" src="images/comodoAbue.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+		<img class="preview" alt="In my second bed with my blue vest" src="images/cama2chaleAzul.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+		<img class="preview" alt="Standing on my bed" src="images/paradoCama.png" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+	</div>
 </body>
 </html>
