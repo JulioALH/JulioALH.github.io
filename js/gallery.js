@@ -31,7 +31,7 @@ function unDo(){
 }
 
 function sortImages(){
-    let imagesList = document.querySelectorAll(".allImages img");
+    let imagesList = document.querySelectorAll("#allImages img");
     let arrayLength = imagesList.length;
     let arrayIndices = Array.from(Array(arrayLength).keys());
     let currentIndex = 0;
