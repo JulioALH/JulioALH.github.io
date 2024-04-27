@@ -29,3 +29,18 @@ function unDo(){
     x.style.backgroundImage = "url('')";
     x.innerHTML = "Hover over an image below to display here.";
 }
+
+function sortImages(){
+    let imagesList = document.querySelectorAll(".allImages img");
+    let arrayLenght = imagesList.lenght;
+    let arrayIndices = Array.from(Array(arrayLenght).keys());
+    let currentIndex = 0, randomNumber, randomIndex;
+    while (arrayLenght >= 1) {
+        randomNumber = Math.floor(Math.random() * (arrayLenght-0.001));
+        randomIndex = arrayIndices(randomNumber);
+        imagesList[currentIndex].src = imagesList[randomIndex].src;
+        arrayIndices.splice(randomNumber,1);
+        arrayLenght = arrayIndices.lenght;
+        currentIndex++;
+    }
+}
