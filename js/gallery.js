@@ -34,10 +34,10 @@ function sortImages(){
     let imagesList = document.querySelectorAll(".allImages img");
     let arrayLength = imagesList.length;
     let arrayIndices = Array.from(Array(arrayLength).keys());
-    let currentIndex = 0, randomNumber, randomIndex;
+    let currentIndex = 0;
     while (arrayLength >= 1) {
-        randomNumber = Math.floor(Math.random() * (arrayLength-0.001));
-        randomIndex = arrayIndices[randomNumber];
+        let randomNumber = Math.floor(Math.random() * (arrayLength-0.0001));
+        let randomIndex = arrayIndices[randomNumber];
         imagesList[currentIndex].src = imagesList[randomIndex].src;
         arrayIndices.splice(randomNumber,1);
         arrayLength--;
