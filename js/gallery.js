@@ -28,12 +28,13 @@ function unDo(){
     x.innerHTML = "Hover over an image below to display here.";
 }
 
-function sortImages(){
+function setImages(){
     let imagesList = document.querySelectorAll("#allImages img");
     let arrayLength = imagesList.length;
     while (arrayLength > 0) {
         let randomIndex = Math.floor(Math.random() * arrayLength--);
         [imagesList[arrayLength].src, imagesList[randomIndex].src] = [imagesList[randomIndex].src, imagesList[arrayLength].src];
         [imagesList[arrayLength].alt, imagesList[randomIndex].alt] = [imagesList[randomIndex].alt, imagesList[arrayLength].alt];
+        imagesList[arrayLength].setAttribute("tabindex","0");
     }
 }
