@@ -31,15 +31,14 @@ function unDo(){
 function sortImages(){
     let imagesList = document.querySelectorAll("#allImages img");
     let arrayLength = imagesList.length;
-    let arrayIndices = Array.from(Array(arrayLength).keys());
-    let currentIndex = 0;
-    while (arrayLength >= 1) {
-        let randomNumber = Math.floor(Math.random() * arrayLength);
-        let randomIndex = arrayIndices[randomNumber];
-        imagesList[currentIndex].src = imagesList[randomIndex].src;
-        imagesList[currentIndex].alt = imagesList[randomIndex].alt;
-        arrayIndices.splice(randomNumber,1);
+    while (arrayLength > 0) {
+        let randomIndex = Math.floor(Math.random() * arrayLength);
         arrayLength--;
-        currentIndex++;
+        let src_tmp = imagesList[arrayLength].src;
+        imagesList[arrayLength].src = imagesList[randomIndex].src;
+        imagesList[randomIndex].src = src_tmp;
+        let alt_tmp = imagesList[arrayLength].alt;
+        imagesList[arrayLength].alt = imagesList[randomIndex].alt;
+        imagesList[randomIndex].alt = alt_tmp;
     }
 }
