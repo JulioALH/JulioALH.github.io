@@ -32,14 +32,7 @@ function sortImages(){
     let imagesList = document.querySelectorAll("#allImages img");
     let arrayLength = imagesList.length;
     while (arrayLength > 0) {
-        let randomIndex = Math.floor(Math.random() * arrayLength);
-        arrayLength--;
-        /*let src_tmp = imagesList[arrayLength].src;
-        imagesList[arrayLength].src = imagesList[randomIndex].src;
-        imagesList[randomIndex].src = src_tmp;
-        let alt_tmp = imagesList[arrayLength].alt;
-        imagesList[arrayLength].alt = imagesList[randomIndex].alt;
-        imagesList[randomIndex].alt = alt_tmp;*/
+        let randomIndex = Math.floor(Math.random() * arrayLength--);
         [imagesList[arrayLength].src, imagesList[randomIndex].src] = [imagesList[randomIndex].src, imagesList[arrayLength].src];
         [imagesList[arrayLength].alt, imagesList[randomIndex].alt] = [imagesList[randomIndex].alt, imagesList[arrayLength].alt];
     }
