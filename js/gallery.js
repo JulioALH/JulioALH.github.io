@@ -37,4 +37,5 @@ function setImages(){
         [imagesList[arrayLength].alt, imagesList[randomIndex].alt] = [imagesList[randomIndex].alt, imagesList[arrayLength].alt];
         imagesList[arrayLength].setAttribute("tabindex","0");
     }
+    console.log("setImages triggered");
 }
