@@ -34,7 +34,7 @@ function sortImages(){
     let arrayIndices = Array.from(Array(arrayLength).keys());
     let currentIndex = 0;
     while (arrayLength >= 1) {
-        let randomNumber = Math.floor(Math.random() * (arrayLength-0.0001));
+        let randomNumber = Math.floor(Math.random() * arrayLength);
         let randomIndex = arrayIndices[randomNumber];
         imagesList[currentIndex].src = imagesList[randomIndex].src;
         imagesList[currentIndex].alt = imagesList[randomIndex].alt;
