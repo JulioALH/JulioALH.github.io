@@ -33,13 +33,13 @@ p{
 @media screen and (min-width:772px){
     div{
       display: inline-block;
-      width: 45%;
+      width: 45vw;
       margin: 5px;
       padding: 2px;
     }
     div img{
         width:150px;
-        height: 25%;
+        max-height: 30vh;
         display:block;
         margin:auto;
     }
