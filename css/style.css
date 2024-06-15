@@ -66,5 +66,15 @@ figcaption{
     scroll-behavior: auto !important;
 }
 
-
+@media (prefers-color-scheme: dark) {
+    .grid figure{
+        background-color: purple;
+    };
+    img{
+        border-color: black;
+    }
+    figcaption{
+        color: yellow;
+    }
+}
 
