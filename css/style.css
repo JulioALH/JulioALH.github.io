@@ -34,6 +34,12 @@ figcaption{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr; /* Creates a single column grid */
+    gap: 10px;
+}
+
 @media screen and (min-width:772px){
     div{
       display: inline-block;
