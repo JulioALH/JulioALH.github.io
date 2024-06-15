@@ -57,4 +57,7 @@ figcaption{
     img{
         border-radius: 0%;
     }
+    .grid figure:nth-child(3n){
+        grid-column: 1 / 3;
+    }
 }
