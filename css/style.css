@@ -41,6 +41,10 @@ figcaption{
     align-items: center;
 }
 
+figure {
+    align-items: center;
+}
+
 @media screen and (min-width:772px){
     .grid{
         grid-template-columns: 1fr 1fr;
