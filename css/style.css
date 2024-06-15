@@ -38,6 +38,7 @@ figcaption{
     display: grid;
     grid-template-columns: 1fr; /* Creates a single column grid */
     gap: 10px;
+    align-items: center;
 }
 
 @media screen and (min-width:772px){
@@ -46,6 +47,9 @@ figcaption{
     }
     img{
         border-radius: 100%;
+    }
+    .grid figure:last-child{
+        
     }
 }
 
