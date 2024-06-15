@@ -49,7 +49,7 @@ figcaption{
         border-radius: 100%;
     }
     .grid figure:last-child{
-        
+        grid-column: 1 / 3;
     }
 }
 
